@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        
+        body {
+            background-image: url('data:image/jpeg;base64,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'); /* Change to your image path */
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#go">About me</a>
+            <a href="#skill">Skill</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+        <h1>Hi.I'm Madhava Priya Dharshini S</h1>
+        <h3>Web Developer</h3> 
+         <p>Actively involved in web development for creating innovative websites.my objective is to work with a challenging environment where i could improve my knowledge and capabilities</p>
+          <div class="btn-box"> 
+            <a href="file:///C:/Users/madha/OneDrive/Desktop/madhavaresume1/resume.pdf" download="resume.pdf" >See my CV</a>  
+          </div>
+            
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
 
+        </div>
+        <span class="home-imghover"></span>
+    </section>
+    <section  id="go" class="about">
+        <div class="about-img">
+            <img src="https://t4.ftcdn.net/jpg/03/83/91/85/360_F_383918518_XWHxcaFVhzg37t1kN3Ro11f6ME5XC5DZ.webp" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Who <span>am I</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>My goal is to create unique and user-friendly websites that stand out. My aim is to continuously improve my web development skills by learning new technologies. I am passionate about coding and enjoy learning new tools and technologies to enhance user experiences on the web.</p>
+        
+        </div>
+    </section>
+    <div class="services">
+        <div id="skill"class="container">
+           <center> <h1 class="sub-title">My Fervant Fields</h1></center>
+            <div class="services-list">
+                <div style="border-right: 2px solid white;">
+                    <h2>WEB DEVELOPMENT</h2><br>
+                    <p> Encompasses the technical aspects of building and maintaining websites, including front-end development and back-end development.</p>
+                </div>
+                <div style="border-right: 2px solid white">
+                    <h2>UI&UX DESIGN</h2><br>
+                    <p> Focuses on the visual elements of a website  including schemes, typography, and interactive elements. Also to create an aesthetic and functional interface.</p>
+                </div>
+                <div>
+                    <h2>Visual Design</h2><br>
+                    <p>Concentrates on the overall aesthetics of a product, including graphic design, color schemes, and typography, to create a cohesive and appealing user interface.</p>
+                </div>
+            </div>    </div>
+        </div>
+        <div id="skill" class="table-title">
+            <h3> ACADEMIC DETAILS</h3><br>
+            <table>
+            <thead>
+                <tr>
+                    <th>YEAR</th>
+                    <th>DEGREE/EXAM</th>
+                    <th>INSTITUTION </th>
+                    <th>PERCENTAGE/MARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-2026</td>
+                    <td>B.TECH(IT)</td>
+                    <td>VCET</td>
+                    <td>8(CGPA)</td>
+                </tr>
+                <tr>
+                    <td>2021-2022</td>
+                    <td>HSLC</td>
+                    <td>CEOA Matri.Hr.Sec.School</td>
+                    <td>63.3</td>
+                </tr>
+                <tr>
+                    <td>2019-2020</td>
+                    <td>SSLC</td>
+                    <td>CEOA Matric.Hr.Sec.School</td>
+                    <td>96</td>
+                </tr>
+            </tbody>
+        </table>
+            <section id="projects">
+                <center><h3>PROJECTS DONE</h3></center>
+                <div class="project">
+                    <h4>PROJECT1:Organic Product</h4>
+                    <p>Developed a website dedicated to organic homemade soaps, emphasizing natural ingredients and their benefits for skin health. The platform features detailed product descriptions, highlighting the unique qualities of each soap, such as moisturizing properties and eco-friendly sourcing.</p>
+                </div>
+                <div class="project">
+                    <h4>PROJECT2:Portfolio </h4>
+                    <p> I have developed a professional portfolio to showcase my web development skills and projects. This portfolio highlights my technical expertise, project experience, and passion for creating user-friendly web applications.</p>
+                </div>
+                <div class="project">
+                    <h4>PROJECT3:web calculator</h4>
+                    <p>Effortlessly perform calculations with our intuitive web calculator. Designed for simplicity and accuracy, it handles basic arithmetic and more complex functions with ease.</p>
+                </div>
+            </section>
+       
+
+
+    </div>
+     
+    <script src="main.js">
+    </script>
+    
+</body>
+<footer id="contact">
+    <br>
+   <h2>Thank you for taking the time to read my website</h2>
+    <a href="mailto:Madhavpriya0000@gmail.com"><i class='bx bxl-gmail'></i></a>
+    <a href="tel:8681044848"><i class='bx bx-phone'></i></a>
+    <a href="https://www.linkedin.com/in/madhav-priya-5022242ab/"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://github.com/madhavapriyadharshini"><i class='bx bxl-github' ></i></a>
+
+   <p style="color:#ededed">&copy;2024 Personal Portfolio.All rights reserved.</p>
+</footer>
+</html>
